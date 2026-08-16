@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Full Page Screenshot Pro | اسکرین‌شات کامل صفحه",
+  "version": "1.0.0",
+  "description": "گرفتن اسکرین‌شات کامل از کل صفحات وب با Chrome DevTools Protocol بدون اسکرول ناقص و با بالاترین کیفیت",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "اسکرین‌شات کامل صفحه"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "debugger",
+    "downloads",
+    "storage",
+    "scripting"
+  ]
+}
